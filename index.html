@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video Player</title>
+     <link href="forest/index.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  </head>
+  <body>
+
+
+      <video
+    id="vid2"
+    controls
+
+    class="video-js vjs-theme-forest"
+    width="640" height="264"
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'
+  >
+  </video>
+  <video    controls
+
+      id="vid1"
+      class="video-js vjs-default-skin"
+      width="640" height="264"
+      data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'
+    >
+    </video>
+    <script>
+     // You can use any YouTube player parameters
+     // https://developers.google.com/youtube/player_parameters?playerVersion=HTML5#Parameters
+     // To use YouTube controls, you must use ytControls instead
+     // To use the loop or autoplay, use the video.js settings
+     // The language is set to the same as video.js by default
+     videojs.setGlobalOptions({
+       youtube: {
+
+         rel: 1,
+         autohide: 2
+       }
+     });
+     </script>
+      <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+
+      <script src="dist/Youtube.min.js"></script>
+  </body>
+</html>
