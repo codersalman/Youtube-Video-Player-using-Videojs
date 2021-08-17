@@ -25,7 +25,32 @@
   <script src="path/to/plyr.js"></script>
   <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 
-<script>
-  const player = new Plyr('#player');
-</script>
+  <script>
+     const player = new Plyr('#player', {
+                      title: 'Video',
+                      
+                    });
+        
+      player.on('ready', event => {
+          //$('.plyr__control[data-plyr="fullscreen"]').hide();
+          //$('.plyr__control[data-plyr="settings"]').hide();
+          //$('.plyr__controls__item[data-plyr="volume"]').hide();
+          //$('.plyr__volume').hide();
+          
+        });  
+        
+        player.on('ended', event => {
+          //const instance = event.detail.plyr;
+          console.log("ended============");
+          player.restart();
+        });
+  </script>
+  <script>
+	$(document).ready(function(){
+	 
+	  
+	   
+	});
+  </script>
+  
 </html>
