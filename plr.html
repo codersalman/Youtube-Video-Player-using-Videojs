@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Plr</title>
+    <link rel="stylesheet" href="path/to/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+
+  </head>
+
+  <body>
+
+
+
+    <div class="plyr__video-embed" id="player">
+    <iframe
+      src="https://www.youtube.com/embed/bTqVqk7FSmY?modestbranding=1&playsinline=1&ashowinfo=0&rel=1&enablejsapi=1"
+      allowfullscreen
+      allowtransparency
+      allow="autoplay"
+    ></iframe>
+  </div>
+
+  </body>
+  <script src="path/to/plyr.js"></script>
+  <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
+<script>
+  const player = new Plyr('#player');
+</script>
+</html>
